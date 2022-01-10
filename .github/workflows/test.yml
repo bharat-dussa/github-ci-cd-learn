@@ -23,4 +23,9 @@ jobs:
               run: yarn build
             - name: setup finish
               run: echo "finished building"
+    next-step:
+        needs: build-app-v1
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "runs after build"
             
