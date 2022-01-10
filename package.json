@@ -1,18 +1,29 @@
 {
-        "scripts": {
-                "start": "snowpack dev"
-        },
-        "dependencies": {
-                "react": "^18.0.0-alpha-64931821a-20210808",
-                "react-dom": "^18.0.0-alpha-64931821a-20210808"
-        },
-        "devDependencies": {
-                "@babel/preset-react": "^7.14.5",
-                "@snowpack/plugin-babel": "^2.1.7",
-                "@snowpack/plugin-dotenv": "^2.1.0",
-                "@snowpack/plugin-react-refresh": "^2.5.0",
-                "@testing-library/jest-dom": "5.11.5",
-                "@testing-library/react": "11.1.1",
-                "snowpack": "^3.8.6"
-        }
+  "scripts": {
+    "start": "snowpack dev"
+  },
+  "dependencies": {
+    "react": "^18.0.0-alpha-64931821a-20210808",
+    "react-dom": "^18.0.0-alpha-64931821a-20210808"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "@snowpack/plugin-babel": "^2.1.7",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@testing-library/jest-dom": "5.11.5",
+    "@testing-library/react": "11.1.1",
+    "snowpack": "^3.8.6"
+  },
+  "name": "code",
+  "version": "1.0.0",
+  "main": "snowpack.config.js",
+  "repository": "git+https://github.com/bharat-dussa/github-ci-cd-learn.git",
+  "author": "bharat-dussa <bharatdussa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharat-dussa/github-ci-cd-learn/issues"
+  },
+  "homepage": "https://github.com/bharat-dussa/github-ci-cd-learn#readme",
+  "description": ""
 }

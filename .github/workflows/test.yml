@@ -1,0 +1,9 @@
+name: my-first-github-actions
+on: [push]
+jobs: 
+    check-initial:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World"
+            - run: echo "this is first workflow"
+            
