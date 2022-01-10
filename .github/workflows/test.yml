@@ -6,8 +6,10 @@ jobs:
         steps:
             - run: echo "Hello World"
             - run: echo "this is first workflow"
-    build-app:
-        - uses: action/checkout@v2
-        - run: tree
-        - run: ls
+    build-app-v1:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: action/checkout@v2
+            - run: tree
+            - run: ls
             
