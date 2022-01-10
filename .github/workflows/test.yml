@@ -13,6 +13,14 @@ jobs:
             - uses: actions/setup-node@v2
               with:
                  node-version: '14.17.0'
-            - run: tree
-            - run: ls
+            - name: list out all paths
+              run: tree
+            - name: list dir
+              run: ls
+            - name: install node_modules
+              run: yarn
+            - name: build project
+              run: yarn build
+            - name: setup finish
+              run: echo "finished building"
             
