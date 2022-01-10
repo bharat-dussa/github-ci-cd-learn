@@ -3,6 +3,8 @@ on: [push]
 jobs: 
     check-initial:
         runs-on: ubuntu-latest
+        outputs:
+          text: ${{ steps.finished.outputs.outputText}} #steps.{id}.outputs.{name}
         steps:
             - run: echo "Hello World"
             - run: echo "this is first workflow"
@@ -22,10 +24,13 @@ jobs:
             - name: build project
               run: yarn build
             - name: setup finish
-              run: echo "finished building"
+              id: finished
+              run: echo "::set-outputName=outputText::hello-from-build-job"
     next-step:
         needs: build-app-v1
         runs-on: ubuntu-latest
+        env: 
+          MY_JOB: ${{ needs.build-app-v1.outputs.outputText}}
         steps:
-            - run: echo "runs after build"
+            - run: echo $MY_JOB
             
